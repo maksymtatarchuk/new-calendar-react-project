@@ -1,0 +1,135 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.calendar-top-bar {
+  max-width: 96vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.week-days {
+  display: flex;
+  justify-content: space-around;
+}
+
+.day-of-week {
+  width: 13%;
+}
+
+.card {
+  display:flex;
+  flex-direction: column;
+}
+
+.card-header {
+  -webkit-user-select: none;
+  user-select: none;
+  display: flex;
+  margin-left: 4px;
+}
+
+.tags-input {
+  margin: 5px 0;
+  width: 94%;
+  padding: 5px 10px;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  z-index: 10;
+  background-color: rgb(148, 148, 148);
+  width: 50%;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.45);
+  padding: 10px;
+}
+
+.modal textarea {
+  resize:vertical;
+  border: none;
+  outline: none;
+  width: 94%;
+  padding: 10px;
+  border-radius: 7px;
+  overflow: hidden;
+  min-height: 16px;
+  max-height: 400px;
+}
+
+.modal-top-bar {
+  margin: 10px 0;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-bottom-bar {
+  margin-top: 5px;
+  width: 80%;
+  display: flex;
+  justify-content: end;
+}
+
+.modal-button {
+  margin: 0 5px;
+  background-color: rgb(94, 117, 245);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.cancel-btn {
+  background-color: rgb(172, 172, 172);
+}
+
+.remove-btn {
+  background-color: rgba(165, 42, 42, 0.9);
+}
+
+.calendar-btn {
+  background-color: rgba(0, 4, 255, 0.637);
+}
+
+.event-tags-bar {
+  border-radius:10px;
+  margin: 5px 0;
+  width: 200px;
+  max-height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.event-tags-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.colors-bar {
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+  max-width: 200px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.top-bar-part button{
+  margin: 0 2px;
+}
